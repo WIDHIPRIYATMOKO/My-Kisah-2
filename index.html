@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Widhi P</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Widhi P</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Widhi Priyatmoko profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Widhi Priyatmoko</h1>
+        <p class="section__text__p2">UI UX Designer</p>
+        <di class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </di>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon2"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon1"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon3"
+                class="icon3"
+              />
+              <h3 id="experience-title">Experience</h3>
+              <p id="experience-desc">2+ years <br>UI UX Design & Frontend</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon4"
+                class="icon4"
+              />
+              <h3 id="education-title">Education</h3>
+              <p id="education-desc">S1. Sistem Informasi <br>S2. Project Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati dolore minus sed in velit totam harum sequi quos. Ad ut quos architecto exercitationem accusamus ex voluptate magnam modi tempora officiis. Architecto tempora quis, labore quam cupiditate illo sit autem voluptates veniam unde at, quae dignissimos, eligendi laboriosam culpa esse?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="html-ex">HTML</h3>
+                  <p id="experience-html">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="css-ex">CSS</h3>
+                  <p id="experience-css">Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="sass-ex">SASS</h3>
+                  <p id="experience-sass">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="java-ex">JavaScript</h3>
+                  <p id="experience-java">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="ts-ex">TypeScript</h3>
+                  <p id="experience-ts">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="mat-ex">Material UI</h3>
+                  <p id="experience-mat">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+<!-- INI YANG EXPERIENCE YA -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="post-ex">PostgreSQL</h3>
+                  <p id="experience-post">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="njs-ex">Node JS</h3>
+                  <p id="experience-njs">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="ejs-ex">Express JS</h3>
+                  <p id="experience-ejs">Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon5" class="icon5">
+                <div>
+                  <h3 id="git-ex">Git</h3>
+                  <p id="experience-git">Intermediate</p>
+                </div>
+              </article>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon6" class="icon6 contact-icon6">
+          <p id="email"><a href="mailto:widhi636@gmail.com">widhi636@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="Linkedin icon7" class="icon7 contact-icon7">
+          <p id="linkedin"><a href="https://linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Widhi Priyatmoko. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
